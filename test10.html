@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+    }
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10%;
+      background-color: #f4f4f4;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    main {
+      display: flex;
+      margin: 30px;
+    }
+    main > section {
+      height: 50%;
+      margin: 20px;
+    }
+    .info {
+      width: 50%;
+    }
+    .function {
+      width: 40%;
+    }
+    .help {
+      justify-content: space-between;
+      display: flex;
+    }
+    .description {
+      border: 1px solid #f4f4f4;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .description {
+      border: 1px solid #f4f4f4;
+    }
+    footer {
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    .add-info {
+      height: 100%;
+      border: 1px solid #f4f4f4;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="#">Strona główna</a>
+      <a href="#">O nas</a>
+      <a href="#">Kontakt</a>
+    </header>
+    <main>
+      <section>
+        <h2>Witaj na naszej skomplikowanej stronie!</h2>
+      </section>
+      <section class="info">
+        <div class="help">
+          <div class="description function">
+            <h2>Funkcja 1</h2>
+            <p>Opis funkcji 1...</p>
+          </div>
+          <div class="description function">
+            <h2>Funkcja 2</h2>
+            <p>Opis funkcji 2...</p>
+          </div>
+        </div>
+        <div class="description function2">
+          <h2>Funkcja 3</h2>
+          <p>Opis funkcji 3...</p>
+        </div>
+      </section>
+      <section class="add-info" style="margin-left: 20px">
+        <h2>Dodatkowe informacje</h2>
+        <p>...</p>
+      </section>
+    </main>
+    <footer>
+      &copy; 2023 Skomplikowana strona z flexboxem. Wszelkie prawa zastrzeżone.
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

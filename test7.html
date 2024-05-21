@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Merriweather',serif;
+            background-color:grey;
+        }
+        .container{
+            background-color:rgb(224, 216, 206);
+            margin:25px;
+            padding:10px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: antiquewhite;
+            width: 100%;
+            text-align: center; 
+            padding: 20px 0; 
+        }
+        
+        header h1 {
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            color: rgb(75, 61, 43);
+            margin: 0; 
+        }
+        
+        .oki {
+            border:1px solid rgb(201, 192, 175);
+            background-color:rgb(236, 225, 212);
+            width: 750px;
+            height:200px;
+            padding:10px;
+            margin: 25px 25px ;
+            padding: 20px; 
+            
+        }
+        
+        .pierwszy {
+            border: 1px solid blanchedalmond;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+        .block {
+            margin: 10px;
+            padding:10px;
+        }
+        .block label{
+            margin-right:10px;
+            
+        }
+        .block input{
+            width:300px;
+            height:22px;
+        }
+        input{
+            border:none;
+        }
+
+        #guzik{
+            background-color:rgb(177, 163, 143);
+            border:none;
+            float:right;
+            width:90px;
+            height:40px;
+            color:white;
+            position:relative;
+            bottom:20px;
+            margin:10px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+        
+        .tabela {
+            width: 750px;
+            margin: 0 auto; 
+            margin-top: 20px; 
+        }
+        
+        .tabela tr:nth-child(odd) {
+            background-color: rgb(206, 193, 177);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+            
+        }
+        
+        th, td {
+             
+            padding: 8px; 
+        }
+        
+        th {
+            background-color: antiquewhite; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TITLE</h1>
+    </header>
+    <div class="container">
+        <div class="oki">
+            <div class="block">
+                <label for="fname">NAME</label>
+                <input type='text'>
+            </div>
+            <div class="block">
+                <label for="fdescription">DESCRIPTION</label>
+                <input type='text'>
+            </div>
+            <div class="block">
+                <label for="fvalue">VALUE</label>
+                <input type='text'>
+            </div>
+            <button type='submit' value='SAVE' id='guzik'>SAVE</button>
+        </div>    
+    </div>
+    <div class="container">
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>VALUE</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Random,random</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                    <td>Random</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Random,random</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                    <td>Random</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Random,random</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                    <td>Random</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Random,random</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                    <td>Random</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Random,random</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                    <td>Random</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

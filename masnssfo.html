@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:1px solid black;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            text-align:center;
+            align-items:center;
+        }
+        form{
+            width:85%;
+        }
+        input[type=text]{
+            width:60%;
+            height:30px;
+            border-radius:10px;
+        }
+        input[type=submit]{
+            width:75%;
+            border-radius:20px;
+            height:40px;
+            margin:10px;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%);
+            color:white;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div class='container'>
+        <h1>Zadanie 9 (0.3 pkt)</h1>
+
+        <h4>Aby obliczyc datę Wielkanocy dla podanego roku,wprowadż rok poniżej</h4>
+        <form name="Masno" action="" method="post">
+            <label for="rok">Wprowadź rok:</label>
+            <input type="text" id="rok" name="rok" required>
+
+            <input type="submit" value="Oblicz">
+        </form>
+    </div>
+</body>
+</html>

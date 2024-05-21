@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .parent{
+            display:flex;
+            flex-wrap:wrap;
+            border:1px solid blue;
+            width:40%;
+            flex-direction:row;
+        }
+        .parent div{
+            margin:10px;
+            padding:10px;
+            border:1px solid red;
+
+        }
+        .parent div:nth-child(3){
+            flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <h1>Funkcja 1</h1>
+            <p>Opis funkcji 1...</p>
+        </div>
+        <div>
+            <h1>Funkcja 2</h1>
+            <p>Opis funkcji 2...</p>
+        </div>
+        <div>
+            <h1>Funkcja 3</h1>
+            <p>Opis funkcji 3...</p>
+        </div>
+        
+    </div>
+</body>
+</html>

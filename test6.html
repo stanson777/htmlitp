@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            text-align: left;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        th:first-child {
+            width: 100px;
+        }
+
+        th:nth-child(2) {
+            width: 150px;
+        }
+
+        th:nth-child(3) {
+            width: 300px;
+        }
+
+        th:nth-child(4) {
+            width: 200px;
+        }
+
+        td:last-child {
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid rgba(158, 157, 157, 0.527);
+        }
+
+        table thead {
+            font-weight: bold;
+        }
+
+        table tbody tr:last-child {
+            font-weight: bold;
+            background-color: rgba(158, 157, 157, 0.788); 
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(158, 157, 157, 0.527); 
+        }
+
+        thead th{
+            background-color: rgba(158, 157, 157, 0.788);
+        }
+
+        tbody tr:hover {
+            background-color: green; 
+        }
+        tbody tr:last-child:hover{
+            background-color:green;
+        }
+        table tbody td:first-child {
+            counter-increment: rowNumber;
+        }
+
+        table tbody td:first-child::before {
+            content: "Nr: " counter(rowNumber);
+        }
+
+        table tbody {
+            counter-reset: rowNumber;
+        }
+
+        .color1{
+            color:rgb(102, 2, 102);
+        }
+
+        .color2{
+            color:rgb(22, 153, 22);
+        }
+
+        .color3{
+            color:rgb(255, 201, 24);
+        }
+
+        .color4{
+            color:blue;
+        }
+
+        .color5{
+            color:red;
+        }
+
+        .color1::after {
+            content: " Ocena: 5.0";
+        }
+
+        .color2::after {
+            content: " Ocena: 3.5";
+        }
+
+        .color3::after {
+            content: " Ocena: 3.0";
+        }
+
+        .color4::after {
+            content: " Ocena: 4.5";
+        }
+
+        .color5::after {
+            content: " Ocena: 1.0";
+        }
+    </style>
+</head>
+<body>
+<h1>List uczniów i ich oceny</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Lp.</th>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Ocena</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td></td>
+        <td>Jan</td>
+        <td>Kowalski</td>
+        <td class="color1"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Maria</td>
+        <td>Nowak</td>
+        <td class="color2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Andrzej</td>
+        <td>Wiśniewski</td>
+        <td class="color3"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Anna</td>
+        <td>Kowalczyk</td>
+        <td class="color4"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Piotr</td>
+        <td>Nowakowski</td>
+        <td class="color5"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
